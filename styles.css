@@ -1,0 +1,162 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image:url("mobile.jpg"); /* Replace 'background-image.jpg' with the path to your image */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed ; /* Ensures the background image remains fixed as the content scrolls */
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+}
+.containerheader{
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+/* Add this CSS for floating images */
+.floating-img1 {
+    width: 20%;
+    height: 30%;
+    position:fixed;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(150%, -150%);
+  }
+  .floating-img2 {
+    width: 20%;
+    height: 30%;
+    position:fixed;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    border-radius: 50%;
+    transform: translate(-250%, -100%); 
+  }
+  
+header {
+   /* Add transparency to make the text more readable on top of the background image */
+    color: #fff;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul {
+    background-color: black;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding-right: 8%;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.imgcont{
+    border-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+#hero {
+    padding: 50px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Add transparency to make the text more readable on top of the background image */
+}
+
+#hero h2 {
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.5); /* Add transparency to make the text more readable on top of the background image */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5); /* Add transparency to make the text more readable on top of the background image */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        padding-right: 5%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    #hero h2 {
+        font-size: 24px;
+    }
+
+    .cta-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+    .imgcont {
+        height: auto; /* Change height to auto for responsive scaling */
+        width: 360px;
+    }
+    .floating-img2{
+        width:10 ;
+        height:20%;
+        transform: translate(-270%, -100%); 
+    }
+}
